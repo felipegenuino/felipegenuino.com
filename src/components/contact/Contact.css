@@ -1,0 +1,54 @@
+.cards{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.ui-cards__container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactForm{
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.contactForm input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 37px;
+    text-indent: 1rem;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+}
+
+.contactForm textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #333333;
+    text-indent: 1rem;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.contactForm button {
+    border: 1px solid #000;
+    background: #333333;
+    color: #fff;
+    font-size: 1rem;
+    height: 37px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
