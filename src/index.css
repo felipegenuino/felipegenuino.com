@@ -15,3 +15,10 @@ code {
 
 
 
+.sr-only{
+  position: absolute !important;
+      left: -10000px !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+}

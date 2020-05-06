@@ -41,20 +41,20 @@ class Cards extends Component{
         console.log('cards', this.state);
 
         return(
-            <div className="cards">
+            <main className="cards" aria-label="últimos trabalhos">
                 <div className="ui-cards__container">
                     <div className="ui-header-page">
-                        <h3 className="ui-header-page__title">My last works</h3>
-                        <p className="ui-header-page__subtitle">Below my last works. 
-                        WebApps, hotsites, folders, flyers and business card, 
-                        over 8 years of career as a <span>designer</span> and <span>frontend</span>, 
-                        working for big companies like AltoQi, Softplan, RTA, 
-                        Myfid and many others.</p>
-                    </div>
+                        <h3  className="ui-header-page__title">Meus últimos trabalhos</h3>
+                            <p className="ui-header-page__subtitle">A seguir meus últimos trabalhos
+                            WebApps, hotsites, folders, flyers e Cartões de visitas, 
+                            mais de 10 anos de carreira como <span>designer</span> and <span>frontend</span>, 
+                            trabalhei em grandes empresas e projetos como AltoQi, Softplan, RTA, 
+                            Myfid e muitos outros.</p>
+                        </div>
 
 
 
-        <article className="works">
+        <ul className="works">
             { this.state.portfolio.map(work => 
               <Work 
                 key={work.fields.id} 
@@ -66,14 +66,14 @@ class Cards extends Component{
             )         
         }
 
-        </article>
+        </ul>
 
 
           
  
 
                 </div>                    
-            </div>
+            </main>
         );
     }
 }

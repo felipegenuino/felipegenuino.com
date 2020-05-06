@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
 import '../work/Work.css'
-import classNames from "classnames";
 
 
 
-class Work extends Component {
 
- 
-
-
+class Work extends Component { 
     state = {
         expanded: false
       };
-
-
-    
+ 
       handleChange = () => {
         // this.setState({ expanded: !this.state.expanded });
       };
@@ -24,9 +18,13 @@ class Work extends Component {
          console.log('state', this.state)
 
         return(
-            <div className={classNames("work shadow-lg",{ active: this.state.expanded })}  >
-              <a  href={this.props.link} target="_blank" > 
-                <img className="work__image" onClick={this.handleChange} src={this.props.image.fields.file.url} alt={this.props.title} />
+          <li className="work shadow-lg"> 
+            <div >
+              <a  
+              href={this.props.link} 
+              target="_blank"                 
+              aria-label={`Abre em outra página: ${this.props.image.fields.description}`} > 
+                <img className="work__image" onClick={this.handleChange} src={this.props.image.fields.file.url} alt={this.props.title} aria-hidden="true" />
 
                 {/* <button onClick={this.handleChange}> close </button> */}
                 <div className="work__body"> 
@@ -37,6 +35,7 @@ class Work extends Component {
                 </div> 
                 </a>
             </div>
+            </li>
         );
     }
 }

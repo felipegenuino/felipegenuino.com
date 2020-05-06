@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom';
         return(
             <header>
                 <Link to="/">
-                    <img src={logo} width="30" title="test" alt="Alt"/>
+                    <img src={logo} width="30" 
+                     alt="Símbolo com um F estilizado no tamanho de uma moeda pequena,  em branco na frente de um fundo escuro, fica localizado visualmente em cima e a esquerda do banner, se clicar vai para a home, como só temos uma página ficamos por aqui."
+                     />
                 </Link>
                  {/* <ul>
                      <li><a href="">Home </a></li>
