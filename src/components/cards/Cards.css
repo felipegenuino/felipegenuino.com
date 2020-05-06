@@ -1,6 +1,7 @@
 .cards{
     background: #fff;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .ui-cards__container{
