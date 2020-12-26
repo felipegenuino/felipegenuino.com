@@ -1,6 +1,5 @@
 .ui-hero{
-    font-family: 'Roboto Slab', serif;
-    height: calc(100vh - 60px);
+     height: calc(100vh - 60px);
     margin-bottom: 30px;
     border-radius: 10px;
     display: -webkit-flex;
@@ -26,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-self: center;
+    max-width: 600px;
 }
 
 
@@ -38,23 +38,30 @@
     flex-direction: row;
 }
 .ui-hero__title {
-    color: #fff;
-    font-size: 10rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 0 0 10px;
+    color: #dedddd;
+    font-size: 4rem;
+     margin: 0 0 20px 10px;
     padding: 0;
-    letter-spacing: -0.5rem;
+    letter-spacing: -0.1rem;
+    font-weight: 600;
 }
 
+.ui-hero__title-name{
+    display: block;
+}
 
 .ui-hero__subtitle  {
-    font-family: 'Amatic SC', cursive;
-    color: #cecfc0;
+     color: #adadad;
     margin: 0 0 0 15px;
-    font-size: 2rem;
+    font-size: 1.6em;
     padding: 0;
 }
     
+.ui-hero__subtitle-break{ 
+    display: block;
+    margin: 4px 0;
+}
+
 .ui-hero__subtitle span{
     color: yellow;
     

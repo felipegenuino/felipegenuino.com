@@ -1,12 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Montserrat|Roboto|Roboto+Slab:100,300,400,700');
+ 
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('./assets/fonts/FuturaStd-Light.woff2') format('woff2'),
+      url('./assets/fonts/FuturaStd-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('./assets/fonts/FuturaStd-Book.woff2') format('woff2'),
+      url('./assets/fonts/FuturaStd-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('./assets/fonts/FuturaStd-Heavy.woff2') format('woff2'),
+      url('./assets/fonts/FuturaStd-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 
-/* 
-font-family: 'Roboto Slab', serif;
-font-family: 'Amatic SC', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/
+
+
+
 
 .App {
   background-color: #333;
@@ -27,17 +51,14 @@ font-family: 'Montserrat', sans-serif;
   max-width: 100%;}
 .ui-header-page__title{
   font-size: 3em;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Amatic SC', cursive;
-  text-align: center;
+   text-align: center;
   font-weight: 700;
   letter-spacing: 0px;
    margin-bottom: 30px;
 }
 .ui-header-page__subtitle{
   font-size: 1.3em;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+   text-align: center;
   font-weight: 300;
   /* margin-top: 0; */
   line-height: 1.3;

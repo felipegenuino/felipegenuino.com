@@ -13,12 +13,16 @@ class Hero extends Component{
             um título Hello, eu sou Felipe Genuino, designer de interfaces e Frontend designer."
             >
                 <h1 className="sr-only"> Hello, eu sou Felipe Genuino, designer de interfaces e frontend designer</h1>
-                <div className="ui-hero__container" aria-hidden="true" >
+                <div className="ui-hero__container" >
                     <div className="ui-hero__box"> 
-                        <h2 className="ui-hero__title"> Hello </h2>
+                        <h2 className="ui-hero__title"> 
+                            <span> Olá, sou</span> 
+                            <span className="ui-hero__title-name"> Felipe Genuino</span> 
+                        </h2>
                         <p className="ui-hero__subtitle">
-                            Im a <span>Felipe Genuino</span> <br/>
-                            Creative UI and <span>Frontend</span>  designer
+                            designer de interfaces
+                            <span className="ui-hero__subtitle-break"> <span>frontend</span>  designer  </span>
+                            apaixonado por acessibilidade.
                         </p>  
                     </div> 
                 </div>
