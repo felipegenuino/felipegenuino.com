@@ -4,7 +4,7 @@ import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Cards from './components/cards/Cards'
 import Contact from './components/contact/Contact'
-
+import {Articles} from './components/articles/Articles'
 import {Whatsapp} from './components/Whatsapp'
 
 import { Route } from 'react-router-dom'
@@ -46,7 +46,7 @@ class App extends Component {
           )} /> 
 
          <Route path='/contact' component={ Contact } />  
-
+         <Route path='/articles' component={ Articles } />  
         </div>
       );
   }
