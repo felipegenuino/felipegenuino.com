@@ -1,3 +1,60 @@
+:root{
+  --background:#dedede; 
+  --surface:#ffffff;
+  --error:#b00020;
+  --primary:#6200ee;
+  --primary-variant:#3700b3;
+  --secundary:#005fb3; 
+  --secundary-variant:#018786; 
+  --on-background:#000000;  
+  --on-surface:#000000;
+  --on-primary:#ffffff;  
+  --on-secundary:#000000;
+  --on-error:#ffffff;
+  --background-hero:url(../src/components/hero/hero-light.jpg);
+}
+@media (prefers-color-scheme: dark){
+ :root{
+  --background:#000; 
+  --surface:#080808;
+  --error:#cf6679;
+  --primary:#bb86fc;
+  --primary-variant:#3700b3;
+  --secundary:#F49603; 
+  --secundary-variant:#03dac6;
+  --on-background:#ffffff;  
+  --on-surface:#ffffff;
+  --on-primary:#000000;  
+  --on-secundary:#000000;
+  --on-error:#000000;
+  --background-hero:url(../src/components/hero/hero-dark.jpg);
+ }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.skip-link {
+  background: var(--on-background);
+  color: var(--background);
+  z-index: 999;
+  /* height: 75px; */
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  margin-left: -112px;
+}
+.skip-link:hover {
+  color: var(--background);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +63,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
 }
 
 code {
@@ -21,4 +79,4 @@ code {
       width: 1px !important;
       height: 1px !important;
       overflow: hidden !important;
-}
+} 

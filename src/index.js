@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 <BrowserRouter>
+<a href="#main" class="skip-link">Pular para conteúdo principal</a>  
     <App />
 </BrowserRouter>, document.getElementById('root'));
 

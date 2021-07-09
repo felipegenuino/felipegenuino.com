@@ -41,7 +41,7 @@ class Cards extends Component{
         console.log('cards', this.state);
 
         return(
-            <main className="cards" aria-label="últimos trabalhos">
+            <main id="main" className="cards" aria-label="últimos trabalhos">
                 <div className="ui-cards__container">
                     <div className="ui-header-page">
                         <h3  className="ui-header-page__title">Meus últimos trabalhos</h3>

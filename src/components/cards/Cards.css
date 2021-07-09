@@ -1,5 +1,5 @@
 .cards{
-    background: #fff;
+    background:red;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -11,4 +11,6 @@
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    background-color: var(--background);
+    color: var(--on-background);
 }

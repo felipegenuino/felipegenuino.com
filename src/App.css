@@ -32,11 +32,14 @@
 
 
 
+
+
 .App {
-  background-color: #333;
+  background-color:var(--background);
   height: 100vh;
   padding: 30px 30px;
 }
+
 
 
 
@@ -46,7 +49,8 @@
   }
 }
 
-.ui-header-page{   width: 710px;
+.ui-header-page{   
+  width: 710px;
   margin: 0 auto;
   max-width: 100%;}
 .ui-header-page__title{
@@ -54,10 +58,11 @@
    text-align: center;
   font-weight: 700;
   letter-spacing: 0px;
-   margin-bottom: 30px;
+  margin-bottom: 30px;
+  margin-top: 70px;
 }
 .ui-header-page__subtitle{
-  font-size: 1.3em;
+  font-size: 1.6em;
    text-align: center;
   font-weight: 300;
   /* margin-top: 0; */

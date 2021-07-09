@@ -4,11 +4,11 @@
     border-radius: 10px;
     display: -webkit-flex;
     display: flex;
-    background-image: url(../hero/image.jpg);
+    background-image: var(--background-hero);
 
     background-blend-mode: luminosity;
     /* background: url(/static/media/image.12e791cc.jpg), -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  Chrome 10-25, Safari 5.1-6 */
-    background-color:#060606; 
+    background-color:var(--surface); 
      background-size: contain;
     background-repeat: no-repeat;
 
@@ -38,9 +38,9 @@
     flex-direction: row;
 }
 .ui-hero__title {
-    color: #dedddd;
+    color: var(--on-surface);
     font-size: 4rem;
-     margin: 0 0 20px 10px;
+    margin: 0 0 20px 10px;
     padding: 0;
     letter-spacing: -0.1rem;
     font-weight: 600;
@@ -51,10 +51,11 @@
 }
 
 .ui-hero__subtitle  {
-     color: #adadad;
+    color: var(--on-surface);
     margin: 0 0 0 15px;
     font-size: 1.6em;
     padding: 0;
+    opacity: 0.8;
 }
     
 .ui-hero__subtitle-break{ 
@@ -63,7 +64,7 @@
 }
 
 .ui-hero__subtitle span{
-    color: yellow;
+    color: var(--secundary);
     
 }
 
