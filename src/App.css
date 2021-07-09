@@ -41,13 +41,7 @@
 }
 
 
-.works{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  flex-flow: row wrap;
-  justify-content: center;
-}
+
 
 @media (max-width: 800px) {
   .App {
