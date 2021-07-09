@@ -1,10 +1,4 @@
-.works{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    flex-flow: row wrap;
-    justify-content: center;
-}
+
 .work{
     border-radius: 4px;
     display: -webkit-flex;
