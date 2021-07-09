@@ -23,9 +23,9 @@ export default class Whatsapp extends Component{
             <Whatsicon>
                 <a 
                 aria-label="Abre whatsapp, link do meu whatsapp (48) 99911-3048, me mande um oi"
-                target="_blank" 
+                target="_blank" rel="noopener noreferrer" 
                 href="https://api.whatsapp.com/send?phone=5548999113048" className="whatsapp"> 
-                    <img src={icon} aria-hidden="true"  />
+                    <img src={icon} aria-hidden="true" alt="Whatsapp" />
                 </a>
             </Whatsicon>
         )

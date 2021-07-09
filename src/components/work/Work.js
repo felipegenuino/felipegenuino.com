@@ -23,6 +23,7 @@ class Work extends Component {
               <a  
               href={this.props.link} 
               target="_blank"                 
+              rel="noopener noreferrer"                
               aria-label={`Abre em outra página: ${this.props.image.fields.description}`} > 
                 <img className="work__image" onClick={this.handleChange} src={this.props.image.fields.file.url} alt={this.props.title} aria-hidden="true" />
 
