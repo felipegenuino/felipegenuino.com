@@ -7,11 +7,13 @@ import Contact from './components/contact/Contact'
 import {Articles} from './components/articles/Articles'
 import {Whatsapp} from './components/Whatsapp'
 
+import  usePageTracking  from './usePageTracking'
 import { Route } from 'react-router-dom'
 
-
 class App extends Component {
-
+  
+  
+ 
 
   // fake authentication Promise
   authenticate(){
@@ -19,6 +21,7 @@ class App extends Component {
   }
 
   componentDidMount(){
+    usePageTracking();
     this.authenticate().then(() => {
       const ele = document.getElementById('ipl-progress-indicator')
       if(ele){
@@ -34,19 +37,22 @@ class App extends Component {
 
 
      render() {
+   
       return (
-        <div className="App">     
-          <Route exact path='/' render={ () => (
-            <>
-              <Whatsapp />
-              <Header /> 
-              <Hero />
-              <Cards />
-            </>
-          )} /> 
+        <div className="App">   
 
-         <Route path='/contact' component={ Contact } />  
-         <Route path='/articles' component={ Articles } />  
+              <Route exact path='/' render={ () => (
+                <>
+                  <Whatsapp />
+                  <Header /> 
+                  <Hero />
+                  <Cards />
+                </>
+              )} /> 
+
+              <Route path='/contact' component={ Contact } />  
+              <Route path='/articles' component={ Articles } />
+  
         </div>
       );
   }
