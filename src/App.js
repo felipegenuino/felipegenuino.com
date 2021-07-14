@@ -6,8 +6,7 @@ import Cards from './components/cards/Cards'
 import Contact from './components/contact/Contact'
 import {Articles} from './components/articles/Articles'
 import {Whatsapp} from './components/Whatsapp'
-
-import  usePageTracking  from './usePageTracking'
+ 
 import { Route } from 'react-router-dom'
 
 class App extends Component {
@@ -21,7 +20,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    usePageTracking();
+   
     this.authenticate().then(() => {
       const ele = document.getElementById('ipl-progress-indicator')
       if(ele){
