@@ -54,7 +54,7 @@ class Cards extends Component{
 
 
 
-        <ul className="works">
+        <ul className="works" aria-label="Trabalhos">
             { this.state.portfolio.map(work => 
               <Work 
                 key={work.fields.id} 

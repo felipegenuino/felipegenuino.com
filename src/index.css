@@ -1,34 +1,47 @@
-:root{
-  --background:#dedede; 
-  --surface:#ffffff;
-  --error:#b00020;
-  --primary:#6200ee;
-  --primary-variant:#3700b3;
-  --secundary:#005fb3; 
-  --secundary-variant:#018786; 
-  --on-background:#000000;  
-  --on-surface:#000000;
-  --on-primary:#ffffff;  
-  --on-secundary:#000000;
-  --on-error:#ffffff;
-  --background-hero:url(../src/components/hero/hero-light.jpg);
+:root {
+  /* --background: #dedede;
+  --surface: #ffffff;
+  --error: #b00020;
+  --primary: #6200ee;
+  --primary-variant: #3700b3;
+  --secundary: #005fb3;
+  --secundary-variant: #018786;
+  --on-background: #000000;
+  --on-surface: #000000;
+  --on-primary: #ffffff;
+  --on-secundary: #000000;
+  --on-error: #ffffff;
+  --background-hero: url(../src/components/hero/hero-light.svg); */
+  --background: #000;
+  --surface: #080808;
+  --error: #cf6679;
+  --primary: #bb86fc;
+  --primary-variant: #3700b3;
+  --secundary: #f49603;
+  --secundary-variant: #03dac6;
+  --on-background: #ffffff;
+  --on-surface: #ffffff;
+  --on-primary: #000000;
+  --on-secundary: #000000;
+  --on-error: #000000;
+  --background-hero: url(../src/components/hero/hero-dark.jpg);
 }
-@media (prefers-color-scheme: dark){
- :root{
-  --background:#000; 
-  --surface:#080808;
-  --error:#cf6679;
-  --primary:#bb86fc;
-  --primary-variant:#3700b3;
-  --secundary:#F49603; 
-  --secundary-variant:#03dac6;
-  --on-background:#ffffff;  
-  --on-surface:#ffffff;
-  --on-primary:#000000;  
-  --on-secundary:#000000;
-  --on-error:#000000;
-  --background-hero:url(../src/components/hero/hero-dark.jpg);
- }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000;
+    --surface: #080808;
+    --error: #cf6679;
+    --primary: #bb86fc;
+    --primary-variant: #3700b3;
+    --secundary: #f49603;
+    --secundary-variant: #03dac6;
+    --on-background: #ffffff;
+    --on-surface: #ffffff;
+    --on-primary: #000000;
+    --on-secundary: #000000;
+    --on-error: #000000;
+    --background-hero: url(../src/components/hero/hero-dark.jpg);
+  }
 }
 
 html {
@@ -54,13 +67,12 @@ html {
   transform: translateY(0);
 }
 
-
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Futura Std", "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Futura Std", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
@@ -71,12 +83,10 @@ code {
     monospace;
 }
 
-
-
-.sr-only{
+.sr-only {
   position: absolute !important;
-      left: -10000px !important;
-      width: 1px !important;
-      height: 1px !important;
-      overflow: hidden !important;
-} 
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
