@@ -1,43 +1,50 @@
+import React from "react";
+
 import fs from "fs";
 import matter from "gray-matter";
-import ReactMarkdown from 'react-markdown'
-export default function Blog({ frontmatter, content}) {
+import md from "markdown-it";
 
+export async function getStaticPaths() {
+  // get slugs
+  const files = fs.readdirSync("posts");
+  const paths = files.map((filename) => ({
+    params: {
+      slug: filename.replace(".md", ""),
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params: { slug } }) {
+  // get content for each blog
+  console.log(slug);
+  const mdfile = fs.readFileSync(`./posts/${slug}.md`);
+  const { data: frontMatter, content } = matter(mdfile);
+
+  return {
+    props: {
+      frontMatter,
+      content,
+    },
+  };
+}
+
+function BlogPage({ frontMatter, content }) {
+  console.log(frontMatter);
+  console.log(content);
   return (
-    <div className="w-100">
-      <img src={`/${frontmatter.socialImage}`} className="w-1/4 mx-auto" />
-      <div className="prose w-3/4  mx-auto">
-        <h1 className="text-sm">{frontmatter.title}</h1>
-        <ReactMarkdown>{content}</ReactMarkdown>
-      </div>
+    <div className='p-10'>
+      <h1 className='text-2xl py-4'>{frontMatter.title}</h1>
+      <article
+        className='prose lg:prose-xl'
+        dangerouslySetInnerHTML={{ __html: md().render(content) }}
+      />
     </div>
   );
 }
 
-
-
-export async function getStaticPaths() {
-  // Get all the paths from slugs or file names
-  const files = fs.readdirSync("posts");
-  const paths = files.map((files) => ({
-    params: {
-      slug: files.replace(".md", ""),
-    },
-  }));
-  console.log("paths", paths)
-  return {
-    paths,
-    fallback:false
-  }
-}
-
-export async function getStaticProps({params:{slug}}){
-    const fileName = fs.readFileSync(`posts/${slug}.md`, "utf-8");
-    const { data: frontmatter, content } = matter(fileName);
-    return {
-      props: {
-        frontmatter,
-        content,
-      },
-    };
-}
+export default BlogPage;
