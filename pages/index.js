@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from "next/link";
 import { Inter } from 'next/font/google'
+import styles from "@/styles/Home.module.css";
 
 
 import fs from "fs";
@@ -40,24 +41,25 @@ export default function Home({ posts }) {
   return (
 <>
 
-    <header className='fixed top-4 left-4 right-4'>
+    {/* <header className='fixed top-4 left-4 right-4'>
       <Link href="/">
         <Image src="./brand.svg" width="30" height="30"  alt="Logotipo Felipe Genuino. Descrição do logotipo: Símbolo com um F estilizado no tamanho de uma moeda pequena,  em branco na frente de um fundo escuro, fica localizado visualmente em cima e a esquerda do banner, se clicar vai para a home, como só temos uma página ficamos por aqui."/>
       </Link>
-    </header>
+    </header> */}
 <Whatsapp />
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* <div class="sc-bdVaJa jNSogM"><a aria-label="Abre whatsapp, link do meu whatsapp (48) 99911-3048, me mande um oi" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5548999113048" class="whatsapp"><img src="/static/media/IconWhats.1f89a692.svg" aria-hidden="true" alt="Whatsapp"></a></div> */}
-      
+    <main className="flex min-h-screen flex-col items-left justify-between p-24">
+       
     
       
-        <section role='banner' className="flex flex-col items-center justify-center" >
+        <section role='banner' className={styles.container} > 
+                <Image className='py-8' src="./brand.svg" width="80" height="80"  alt="Logotipo Felipe Genuino. Descrição do logotipo: Símbolo com um F estilizado no tamanho de uma moeda pequena,  em branco na frente de um fundo escuro, fica localizado visualmente em cima e a esquerda do banner, se clicar vai para a home, como só temos uma página ficamos por aqui."/>
+
                 <h1 className="text-6xl font-bold">
-                  <span> Olá, sou</span>
-                  <span className=""> Felipe Genuino</span>
+                  <span className='block'> Olá, sou</span>
+                  <span className="font-black"> Felipe Genuino</span>
                 </h1>
-                <p className="mt-4 text-center">
-                  designer de interfaces, frontend designer e apaixonado por acessibilidade.
+                <p className="mt-4 text-left">
+                  designer de interfaces & frontend apaixonado por acessibilidade.
                 </p> 
           </section>
 

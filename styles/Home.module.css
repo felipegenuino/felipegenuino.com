@@ -3,7 +3,7 @@
     margin-bottom: 30px;
     border-radius: 10px;
     display: flex;
-    background-image: var(--background-hero);
+    background-image: var('./hero-dark.jpg');
     background-blend-mode: luminosity;
     background-color: var(--surface);
     background-size: contain;
